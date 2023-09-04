@@ -22,6 +22,17 @@ These tools and tips are for technical open source intelligence.
 - Social Engineer Tool Kit: [SET](https://github.com/trustedsec/social-engineer-toolkit)
 - [IntelTechniques](https://inteltechniques.com/)
     - search engines for everything
+### Binary Exploitation
+These tools can be helpful for binary exploitation.
+#### Tools 
+- Ghidra 
+  - decompiler
+  - open source by NSA
+- IDA
+  - decompiler 
+  - have not personally used the paid version
+- pwngdb
+  - Debugger made specifically for reverse engineering
 #### Tips
 - google search ideas 
     - webcam
