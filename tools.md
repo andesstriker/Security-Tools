@@ -22,6 +22,14 @@ These tools and tips are for technical open source intelligence.
 - Social Engineer Tool Kit: [SET](https://github.com/trustedsec/social-engineer-toolkit)
 - [IntelTechniques](https://inteltechniques.com/)
     - search engines for everything
+#### Tips
+- google search ideas 
+    - webcam
+    - passwords
+    - private photos
+- always check robots.txt
+- file metadata can be useful
+
 ### Binary Exploitation
 These tools can be helpful for binary exploitation.
 #### Tools 
@@ -31,12 +39,10 @@ These tools can be helpful for binary exploitation.
 - IDA
   - decompiler 
   - have not personally used the paid version
-- pwngdb
+- pwndbg
   - Debugger made specifically for reverse engineering
-#### Tips
-- google search ideas 
-    - webcam
-    - password
-    - private photos
-- always check robots.txt
-- file metadata can be useful
+- [convert hex to assembly](https://defuse.ca/online-x86-assembler.htm#disassembly)
+  - other interesting tools on this website
+- http://phrack.org/
+  - incredible resource
+- pwn library in python

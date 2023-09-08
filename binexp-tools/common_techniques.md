@@ -1,6 +1,8 @@
 # Common Techniques
 These are many common techniques used in different reverse engineering problems.
 ## Binary Patching
+- https://materials.rangeforce.com/tutorial/2020/04/12/Patching-Binaries/
+- can be done easily in a decompiler like ida or ghidra
 ## Command Line Injection
   - changing system file paths
 ## Shellcode
@@ -12,6 +14,28 @@ These are many common techniques used in different reverse engineering problems.
   -  don't `use mov eax, 0` don't want a null byte in the payload
   -  al is the lowest byte of eax
   -  envp will be the second element of argv
+  -  if execve is blocked there are plenty of other system calls that can be used
+  -  write concise shellcode because ids systems will block anything too long
+     -  use the stack
+     -  use `xor`
+     -  use `cbw` and its variant
+     -  staging shellcode in environment variables
+     -  leverage context 
+        -  what is already in registers
+  - if you are only using alphanumeric chars
+    - construct the real shellcode on the stack at runtime
+      - this technique is known as self modifying shellcode
+    - this will easily fool ids systems
+    - http://phrack.org/issues/57/15.html#article
+    - ex.
+        ```
+        movw $0, %ax   ; 0x66 0xb8 0x00, 0x00, 0x00 (not allowed)
+        ->
+        andw $0x454e, %ax 
+        andw $0x3a31, %ax
+        ```
+  - it is possible to write exploits that are system blind
+    - one technique is opening emulators for each architecture and brute force the byte combinations
   -  useful template for shellcode
 ``` 
 #include <sys/syscall.h> 
