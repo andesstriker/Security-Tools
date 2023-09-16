@@ -74,4 +74,9 @@ popladdr:
 
 calladdr:
   call    popladdr
-  .string STRING ```
+  .string STRING 
+  ```
+  - can inject shellcode through stack, env variables, file names, and arguments
+
+## Security Protections
+- nx being disabled means that memory spaces such as the stack are executable

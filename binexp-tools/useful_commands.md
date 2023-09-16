@@ -12,6 +12,7 @@
 - `objdump intel -h <file> | less`: will dump the hex in intel assembly
   - can be modified to dump the assembly for a specific architecture
 - `readelf -h <file>`:reads file headers
+- `checksec <file>`: returns the security specifications of the file
 
 
 ## Pwndbg
