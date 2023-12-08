@@ -54,6 +54,7 @@ These tools can be helpful for binary exploitation.
     - `shellcraft -d <file>`: run premade shellcode in gdb
     - `shellcraft -r <file>`: run premade shellcode
     - can also be used in python file
+- Learn heap overflows here https://github.com/shellphish/how2heap/tree/master 
   
 ### General Tools 
 These tools still need to be categorized. Leaving them here for completeness.
