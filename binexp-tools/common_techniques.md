@@ -80,3 +80,57 @@ calladdr:
 
 ## Security Protections
 - nx being disabled means that memory spaces such as the stack are executable
+
+## Stack Canary
+- places a random value on stack to check integrity of ra
+- gs: thread local storage
+  - canary chosen from here
+- if using two strcpy's in a row and switching the arguments, check for overwriting the second strcpy's arguments
+
+
+## DEP 
+- Data Execution Prevention 
+- it is NX or X^W
+- does not let you execute code so cannot inject shellcode
+  
+## ASLR
+- Address Space Layout Randomization (ASLR, PIE)
+- `cat /proc/sys/kernel/randomize_va_space` - > 2
+  - change it to zero ti disable
+- `./check`
+- randomized segments but offsets in each segment are the same
+
+
+## ROP
+- Can get around all the protections if can leak a specific address
+- OneGadget can be very useful
+
+
+## String Formatted Attacks
+- how does printf know of #arguments passed?
+- how do we access the arguments in the function
+- adding an extra argument to printf
+  - works fine 
+  - having one less argument will look at one value above in the stack
+- a variadic function
+  - allows for a variable number of arguments
+  - $ specifier moves up the argument chain
+  - %n will used to write to an address
+  - %10d print an int on 10-space word
+  - %hhn lets you write you write a smaller amount
+- libc function address are figured out at runtime using plt
+- can print got (global offset table)
+
+## Fuzzing and Symbolic Execution
+- symbolic execution can be very slow
+- fuzzing is preferred
+  - AFL is a good tool for fuzzing 
+    - made with heuristics to be very efficient
+    - expecting binaries
+  - Radasma: syntax-aware fuzzer
+  - Cross-fuzz: function syntax for Javascrpt
+  - langfuzz: fuzzing program languages
+  - Driller/GYSM: fuzzing-symbolic execution
+  - https://tc.gts3.org/cs6265/tut/tut10-01-fuzzing.html
+
+

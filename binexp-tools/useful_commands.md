@@ -29,3 +29,7 @@
   - useful for recognizable patterns for stack overflows
   - `cyclic -l faaa`
   - can lookup a specific pattern
+
+
+## fmtstr attacks
+`nm crackme0x00 | grep secret` - lookup an address
