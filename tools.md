@@ -45,7 +45,7 @@ These tools can be helpful for binary exploitation.
 - [convert hex to assembly](https://defuse.ca/online-x86-assembler.htm#disassembly)
   - other interesting tools on this website
 - http://phrack.org/
-  - incredible resource
+  - incredible resource for different binary exploitation technique. 
 - pwntools library in python
   - shellcraft 
     - `shellcraft -h`: shellcraft help
@@ -63,4 +63,9 @@ These tools still need to be categorized. Leaving them here for completeness.
 - quipquip
 - BurpSuite
 - factorDB
+- Autopsy (forensics)
+- Jack The Ripper 
+- Audacity 
+- Wireshark 
+- Steghide
 
