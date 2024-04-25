@@ -12,6 +12,7 @@
 - `objdump intel -h <file> | less`: will dump the hex in intel assembly
   - can be modified to dump the assembly for a specific architecture
 - `readelf -h <file>`:reads file headers
+- `checksec <file>`: returns the security specifications of the file
 
 
 ## Pwndbg
@@ -28,3 +29,7 @@
   - useful for recognizable patterns for stack overflows
   - `cyclic -l faaa`
   - can lookup a specific pattern
+
+
+## fmtstr attacks
+`nm crackme0x00 | grep secret` - lookup an address
