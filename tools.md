@@ -39,10 +39,33 @@ These tools can be helpful for binary exploitation.
 - IDA
   - decompiler 
   - have not personally used the paid version
+  - I did like the unpaid version better than ghidra. It definetly has a better ui. 
 - pwndbg
   - Debugger made specifically for reverse engineering
 - [convert hex to assembly](https://defuse.ca/online-x86-assembler.htm#disassembly)
   - other interesting tools on this website
 - http://phrack.org/
-  - incredible resource
-- pwn library in python
+  - incredible resource for different binary exploitation technique. 
+- pwntools library in python
+  - shellcraft 
+    - `shellcraft -h`: shellcraft help
+    - `shellcraft -fa <file>`: run a premade shellcode
+    - `shellcraft -l `: all of the premade shellcodes
+    - `shellcraft -d <file>`: run premade shellcode in gdb
+    - `shellcraft -r <file>`: run premade shellcode
+    - can also be used in python file
+- Learn heap overflows here https://github.com/shellphish/how2heap/tree/master 
+  
+### General Tools 
+These tools still need to be categorized. Leaving them here for completeness.
+#### Tools 
+- CyberChef 
+- quipquip
+- BurpSuite
+- factorDB
+- Autopsy (forensics)
+- Jack The Ripper 
+- Audacity 
+- Wireshark 
+- Steghide
+
