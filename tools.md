@@ -55,7 +55,17 @@ These tools can be helpful for binary exploitation.
     - `shellcraft -r <file>`: run premade shellcode
     - can also be used in python file
 - Learn heap overflows here https://github.com/shellphish/how2heap/tree/master 
-  
+ 
+### Web Exploits
+- burpsuite 
+    - use spider to find pages on a website 
+    - automate attacks 
+    - intercept payloads
+- nikto 
+    - `nikto -host google.com`
+    - the command above will scan that website and find many potential issues to investigate
+## Tips
+- burpsuite and nikto are great for application mapping
 ### General Tools 
 These tools still need to be categorized. Leaving them here for completeness.
 #### Tools 
