@@ -64,8 +64,10 @@ These tools can be helpful for binary exploitation.
 - nikto 
     - `nikto -host google.com`
     - the command above will scan that website and find many potential issues to investigate
+- httprecon
+    - will get a fingerprint of the website
 ## Tips
-- burpsuite and nikto are great for application mapping
+- burpsuite, nikto, and httprecon are great for application mapping
 ### General Tools 
 These tools still need to be categorized. Leaving them here for completeness.
 #### Tools 
