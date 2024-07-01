@@ -66,6 +66,8 @@ These tools can be helpful for binary exploitation.
     - the command above will scan that website and find many potential issues to investigate
 - httprecon
     - will get a fingerprint of the website
+- [payloadsAllTheThings repo](https://github.com/swisskyrepo/PayloadsAllTheThings?tab=readme-ov-file)
+    - has payloads for all types of situations
 ## Tips
 - burpsuite, nikto, and httprecon are great for application mapping
 ### General Tools 
