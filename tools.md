@@ -68,6 +68,12 @@ These tools can be helpful for binary exploitation.
     - will get a fingerprint of the website
 - [payloadsAllTheThings repo](https://github.com/swisskyrepo/PayloadsAllTheThings?tab=readme-ov-file)
     - has payloads for all types of situations
+- dirb
+    - explore urls for hidden pages
+    - `dirb http://35.227.24.107/b02f939d67/ /usr/share/wordlists/dirb/common.txt`
+- hydra
+    - password spraying tool
+    - post request example `hydra -L rockyou.txt -p idk -t 20 35.227.24.107 http-post-form "/b02f939d67/login:username=^USER^&password=^PASS^:Invalid username"`
 ## Tips
 - burpsuite, nikto, and httprecon are great for application mapping
 ### General Tools 
