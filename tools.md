@@ -74,6 +74,8 @@ These tools can be helpful for binary exploitation.
 - hydra
     - password spraying tool
     - post request example `hydra -L rockyou.txt -p idk -t 20 35.227.24.107 http-post-form "/b02f939d67/login:username=^USER^&password=^PASS^:Invalid username"`
+- echomirage 
+    - can inject into a process and intercept calls to socket APIs.
 ## Tips
 - burpsuite, nikto, and httprecon are great for application mapping
 ### General Tools 
