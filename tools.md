@@ -22,6 +22,8 @@ These tools and tips are for technical open source intelligence.
 - Social Engineer Tool Kit: [SET](https://github.com/trustedsec/social-engineer-toolkit)
 - [IntelTechniques](https://inteltechniques.com/)
     - search engines for everything
+- GoPhish
+    - open source tool for automating phishing campaigns
 #### Tips
 - google search ideas 
     - webcam
@@ -76,6 +78,14 @@ These tools can be helpful for binary exploitation.
     - post request example `hydra -L rockyou.txt -p idk -t 20 35.227.24.107 http-post-form "/b02f939d67/login:username=^USER^&password=^PASS^:Invalid username"`
 - echomirage 
     - can inject into a process and intercept calls to socket APIs.
+- [Build Your Own Botnet](https://github.com/malwaredllc/byob)
+#### Browser Extension Tools
+- bytecode decompilers
+    - jad for java
+    - flasm, flare, swfscan for flash 
+    - .netreflector for silverlight
+### GenAI
+- pyRIT tool by Azure 
 ## Tips
 - burpsuite, nikto, and httprecon are great for application mapping
 ### General Tools 
@@ -83,7 +93,6 @@ These tools still need to be categorized. Leaving them here for completeness.
 #### Tools 
 - CyberChef 
 - quipquip
-- BurpSuite
 - factorDB
 - Autopsy (forensics)
 - Jack The Ripper 
