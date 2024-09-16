@@ -57,6 +57,7 @@ These tools can be helpful for binary exploitation.
 - Learn heap overflows here https://github.com/shellphish/how2heap/tree/master 
  
 ### Web Exploits
+- useful site for learning https://portswigger.net/web-security
 - burpsuite 
     - use spider to find pages on a website 
     - automate attacks 
@@ -84,7 +85,7 @@ These tools still need to be categorized. Leaving them here for completeness.
 - BurpSuite
 - factorDB
 - Autopsy (forensics)
-- Jack The Ripper 
+- Jack The Ripper (password cracking) 
 - Audacity 
 - Wireshark 
 - Steghide
